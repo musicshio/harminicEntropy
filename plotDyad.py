@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from he import calcHE
+from he import calcDyadHE
 
-C = 1200
-x = np.linspace( 0, 1200, C)
-y = calcHE(x)
+C = 1000
+x = np.linspace( 0, 1500, C)
+y = calcDyadHE(x)
 plt.plot(x, y)
 plt.show()
 plt.savefig('fig.png')
